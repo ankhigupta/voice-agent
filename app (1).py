@@ -1,6 +1,19 @@
 import io
 import streamlit as st
+import google
+
+import sys
+
+print("Python:", sys.executable)
+
+print("Google module:", google)
+
+print("Google path:", getattr(google, "__path__", None))
+
+print("Google file:", getattr(google, "__file__", None))
+
 from google import genai
+
 from google.genai import types
 
 MODEL = "gemini-3.5-flash-lite"
